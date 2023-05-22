@@ -7,6 +7,7 @@ import Watch from './components/Watch';
 import Start from './components/Start';
 import Market from './components/Market';
 import Post from './components/Post';
+import Footer from './components/Footer';
 
 
 
@@ -76,14 +77,17 @@ function App() {
 
       <div className='container'>
         
-        <div className='esquerda'><Esquerda/></div>
+        <div className='esquerda'>
+          <Esquerda/>
+          
+          </div>
   
         <div className='feed'> <Feed/> </div>
           <div className='direita'> <Direita/> </div>
       </div>
   
 </main>
-      
+      <div className='footer'><Footer/></div>
     
     </div>
 
