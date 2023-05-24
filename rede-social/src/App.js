@@ -19,28 +19,33 @@ function App() {
     <div className="App" > 
 
 
-    <div className='header'>
+    
       
-      <header>
+      <header className='header'>
 
       <div className='divheader'>
 
-        <p className='friend'><a href="http://localhost:3000/" className='link'>FriendLink</a></p>
-
-        
-        <div className='divmarket'>
-              <Market/>
-            
+        <div className='friend'>
+          
+          <a href="http://localhost:3000/" className='link'>FriendLink</a>
+          
           </div>
 
-            <div className='divhome'>
-              <Start/>
-            </div>
-            
-            <div className='divvideo'>
-              <Watch/>
-            
-          </div>
+       <div className='icones'>
+         
+         <div className='divmarket'>
+               <Market/>
+         
+           </div>
+             <div className='divhome'>
+               <Start/>
+             </div>
+         
+             <div className='divvideo'>
+               <Watch/>
+         
+           </div>
+       </div>
 
           
         
@@ -48,26 +53,28 @@ function App() {
 
           <p className='search'>
             <label htmlFor ="isearch">Pesquisar</label>
-            <input type='search'name='search' id='isearch' placeholder='Pesquisar no FriendLink' ></input>
+            <input type='search'name='search' id='isearch' placeholder='Pesquisar no FriendLink' >
+              
+            </input>
           </p>
       </div>
         
       </header>
-    </div>
+    
 <main>
 
   <div className='caixa'>
     <div className='preto'>
-      <div className='branco'>
+      <div className='branco'> 
       <div className='post'>
         <Post/>
         
-        <div className='postagem'>
+        
           <label htmlFor="iposte"></label>
               <input type="text" name="poste" id="iposte" placeholder='No que você está pensando ?' ></input>
+        
         </div>
         </div>
-      </div>
   </div>
 
 

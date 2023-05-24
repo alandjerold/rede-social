@@ -1,7 +1,12 @@
-import styles from "./Sts.module.css"
+
+import styles from "./Esquerda.module.css"
 
 
 function Esquerda (){
+    
+
+       
+
     
 
     return(
@@ -16,20 +21,22 @@ function Esquerda (){
            
            
            <div >
-                <div>
-                    <select className={styles.status} name="sts" id="status"  >
-                        <option value={'dp'}>Disponível</option>
-                        <option value={'au'}>Ausente</option>
-                        <option value={'inv'}>Invisível</option>
-                        <option value={'off'}>Off-line</option>
-                    </select>
-                </div>
-                <label htmlFor="status">
+                
+                    
+                        <select className={styles.status} name="sts" id="status"  >
+                            <option value={'dp'}>Disponível</option>
+                            <option value={'au'}>Ausente</option>
+                            <option value={'inv'}>Invisível</option>
+                            <option value={'off'}>Off-line</option>
+                        </select>
+                    
+                
+                <label  id="seta" className={styles.seta} htmlFor="status">
                    
-                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16" >
-                     <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                   </svg>
-               
+                   
+                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16" className="seta" >
+                         <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                       </svg> 
 </label>
             </div>
 
