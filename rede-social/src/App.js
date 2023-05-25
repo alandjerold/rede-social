@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Esquerda from './components/Esquerda'
 import Direita from './components/Direita'
-import Feed from './components/Feed';
+
 import Watch from './components/Watch';
 import Start from './components/Start';
 import Market from './components/Market';
-import Post from './components/Post';
-import Footer from './components/Footer';
+import Postar from './Eventos/Postar';
+
+
 
 
 
@@ -23,7 +24,7 @@ function App() {
       
       <header className='header'>
 
-      <div className='divheader'>
+      
 
         <div className='friend'>
           
@@ -44,20 +45,20 @@ function App() {
              <div className='divvideo'>
                <Watch/>
          
-           </div>
+         
        </div>
 
-          
+       </div>
         
 
 
-          <p className='search'>
+          <div className='search'>
             <label htmlFor ="isearch">Pesquisar</label>
             <input type='search'name='search' id='isearch' placeholder='Pesquisar no FriendLink' >
               
             </input>
-          </p>
-      </div>
+          </div>
+      
         
       </header>
     
@@ -66,18 +67,14 @@ function App() {
   <div className='caixa'>
     <div className='preto'>
       <div className='branco'> 
-      <div className='post'>
-        <Post/>
+     
+        <div><Postar/></div>
         
         
-          <label htmlFor="iposte"></label>
-              <input type="text" name="poste" id="iposte" placeholder='No que você está pensando ?' ></input>
+          
+      </div>
         
-        </div>
-        </div>
-  </div>
-
-
+      </div>
     </div>
 
 
@@ -89,14 +86,14 @@ function App() {
           
           </div>
   
-        <div className='feed'> <Feed/> </div>
+        
           <div className='direita'> <Direita/> </div>
       </div>
   
 </main>
-      <div className='footer'><Footer/></div>
-    
-    </div>
+     
+            </div>
+      
 
     
   );

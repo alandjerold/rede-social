@@ -1,8 +1,8 @@
 function Feed (){
     return(
-        <di>
+        <div>
             <h2>Feed de notícias</h2>
-        </di>
+        </div>
     )
 }
 
