@@ -91,6 +91,7 @@
 }
 .caixa{
   display: flex;
+  margin-top: 20px;
 }
 .preto{
   height: 40px;

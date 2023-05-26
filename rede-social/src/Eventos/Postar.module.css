@@ -71,7 +71,7 @@ padding-left: 5px;
       box-shadow: -4px 7px 1px  rgba(0, 0, 0, 0.178);
       
       margin: auto;
-      margin-top: 60px;
+      margin-top: 20px;
      
     }
 
@@ -82,6 +82,20 @@ padding-left: 5px;
       color: black;
       background-color: rgb(255, 255, 255);
     }
- 
+    .res:empty {
+      background-color: transparent;
+      
+    }
+    .botoes{
+      margin-top: -25px;
+      margin-right: -130px;
+      
+    }
+    .botoes > button{
+      border-radius: 14px;
+      
+      border: 2px solid black;
+    }
+    
   
     
