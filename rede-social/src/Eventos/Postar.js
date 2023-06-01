@@ -1,15 +1,47 @@
 
-
-import { useState } from "react"
+import Botao from "./Botao"
+import {  useState } from "react"
 import styles from "./Postar.module.css"
 
 
+
 function Postar (){
-    const [post, setValue] = useState()
+    
+    
+    const [posts, setPosts] = useState([]);
+    
+    
+    
+    
+
+    
+    
  function posted(e) {
      e.preventDefault()
-    setValue( e.target.elements.inputtext.value)
+     
+     const value = e.target.elements.inputtext.value 
+     const newpost = 
+     (
+     <div className={styles.res} id="res" name= 'res'>
+        {value} 
+     <Botao/>
     
+ </div>
+     )   
+    
+
+    
+    if(value === ''){
+        return('')
+    }
+          
+    else  {
+    setPosts([...posts,newpost])
+   
+
+      
+ }
+   
 }
   
     
@@ -33,6 +65,7 @@ return(
                 <form onSubmit={posted}>
                     <div className={styles.inputpost}>
                         <input className={styles.csspost} name="inputtext" id="post" type="text" placeholder="No que você está pensando ?"  >
+                            
                         </input>
                     </div>
                     <div className={styles.inputbotao}>
@@ -49,14 +82,18 @@ return(
 
 
 <div className={styles.feed}>
-<h2>Feed de notícias</h2>
-<div className={styles.divres}>
-    <p className={styles.res} id="res">{post}</p>
-    <div className={styles.botoes}>
-        <button>Compartilhar</button><button>Curtir</button>
-        <button>Excluir</button>
-    </div>
-</div>
+<h2>Feed de notícias </h2>
+{posts.map(( newpost) => (
+ 
+    <div  id="res" name= 'res'>
+      {newpost}
+      
+   </div>
+   
+   
+    
+))}
+
 
 </div>
 </div>

@@ -78,24 +78,45 @@ padding-left: 5px;
     .res{
       padding-top: 30px;
       text-align: start;
-      
+     padding-left: 10px;
       color: black;
       background-color: rgb(255, 255, 255);
     }
-    .res:empty {
-      background-color: transparent;
-      
-    }
-    .botoes{
-      margin-top: -25px;
-      margin-right: -130px;
-      
-    }
-    .botoes > button{
-      border-radius: 14px;
-      
-      border: 2px solid black;
-    }
     
   
+   .botoes{
     
+    text-align: right;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    
+  
+  }
+
+  .botoes > button{
+    border-radius: 14px;
+    border: 1px solid black;
+    margin-left: 5px;
+    text-align: center;
+    
+  }
+  button:hover{
+    cursor: pointer;
+  }
+.numcurtidas{
+  display: inline-flex; 
+  font-size: 15px;
+ 
+}
+
+svg{
+  margin-bottom: -2px;
+}
+
+  
+.colorcurti{
+  color: rgb(180, 10, 10);
+ 
+  
+}
+
